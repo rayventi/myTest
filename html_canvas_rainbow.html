@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="canvasRainbow" width="1920" height="1080"></canvas>
+
+		<script type="text/javascript">
+			var rainbow=document.getElementById('canvasRainbow');
+			var rCTX=rainbow.getContext("2d");
+
+			rCTX.fillStyle="#EAF3FA";
+			rCTX.fillRect(0,0,1920,1080);
+
+			rCTX.fillStyle="#F7EDEE";
+			rCTX.beginPath();
+			rCTX.arc(960,540,320,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			rCTX.fillStyle="#FDEAC0";
+			rCTX.beginPath();
+			rCTX.arc(960,540,300,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			rCTX.fillStyle="#F7F8BC";
+			rCTX.beginPath();
+			rCTX.arc(960,540,280,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			rCTX.fillStyle="#D5FDC9";
+			rCTX.beginPath();
+			rCTX.arc(960,540,260,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			rCTX.fillStyle="#C8F1EB";
+			rCTX.beginPath();
+			rCTX.arc(960,540,240,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			rCTX.fillStyle="#CFD3DF";
+			rCTX.beginPath();
+			rCTX.arc(960,540,220,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			rCTX.fillStyle="#EAF3FA";
+			rCTX.beginPath();
+			rCTX.arc(960,540,200,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+		</script>
+	</body>
+</html>

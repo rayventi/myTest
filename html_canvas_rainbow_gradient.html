@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="rainbowCanvas" width="1920" height="1080"></canvas>
+
+		<script type="text/javascript">
+			var rainbow_Canvas=document.getElementById('rainbowCanvas');
+			var rCTX=rainbow_Canvas.getContext("2d");
+
+			rCTX.fillStyle="#EAF3FA";
+			rCTX.fillRect(0,0,1920,1080);
+
+			var rGRD=rCTX.createRadialGradient(960,1080,680,960,1080,720);
+			rGRD.addColorStop(0,"#F7EDEE");
+			rGRD.addColorStop(1,"#EAF3FA");
+
+			rCTX.fillStyle=rGRD;
+			rCTX.beginPath();
+			rCTX.arc(960,1080,720,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			var rGRD=rCTX.createRadialGradient(960,1080,640,960,1080,680);
+			rGRD.addColorStop(0,"#FDEAC0");
+			rGRD.addColorStop(1,"#F7EDEE");
+
+			rCTX.fillStyle=rGRD;
+			rCTX.beginPath();
+			rCTX.arc(960,1080,680,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			var rGRD=rCTX.createRadialGradient(960,1080,600,960,1080,640);
+			rGRD.addColorStop(0,"#F7F8BC");
+			rGRD.addColorStop(1,"#FDEAC0");
+
+			rCTX.fillStyle=rGRD;
+			rCTX.beginPath();
+			rCTX.arc(960,1080,640,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			var rGRD=rCTX.createRadialGradient(960,1080,560,960,1080,600);
+			rGRD.addColorStop(0,"#D5FDC9");
+			rGRD.addColorStop(1,"#F7F8BC");
+
+			rCTX.fillStyle=rGRD;
+			rCTX.beginPath();
+			rCTX.arc(960,1080,600,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			var rGRD=rCTX.createRadialGradient(960,1080,520,960,1080,560);
+			rGRD.addColorStop(0,"#C8F1EB");
+			rGRD.addColorStop(1,"#D5FDC9");
+
+			rCTX.fillStyle=rGRD;
+			rCTX.beginPath();
+			rCTX.arc(960,1080,560,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			var rGRD=rCTX.createRadialGradient(960,1080,480,960,1080,520);
+			rGRD.addColorStop(0,"#CFD3DF");
+			rGRD.addColorStop(1,"#C8F1EB");
+
+			rCTX.fillStyle=rGRD;
+			rCTX.beginPath();
+			rCTX.arc(960,1080,520,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+			var rGRD=rCTX.createRadialGradient(960,1080,440,960,1080,480);
+			rGRD.addColorStop(0,"#EAF3FA");
+			rGRD.addColorStop(1,"#CFD3DF");
+
+			rCTX.fillStyle=rGRD;
+			rCTX.beginPath();
+			rCTX.arc(960,1080,480,Math.PI,Math.PI*2);
+			rCTX.closePath();
+			rCTX.fill();
+
+		</script>
+	</body>
+</html>
